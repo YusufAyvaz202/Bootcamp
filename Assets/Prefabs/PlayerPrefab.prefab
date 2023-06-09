@@ -51,6 +51,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 3
+  dashSpeed: 3
+  dashTime: 0.25
+  dashCooldown: 3
 --- !u!33 &3953049689860820772
 MeshFilter:
   m_ObjectHideFlags: 0

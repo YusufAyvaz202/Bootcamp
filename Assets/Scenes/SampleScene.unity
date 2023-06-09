@@ -172,10 +172,7 @@ MonoBehaviour:
   playerSpawns:
   - {fileID: 2031128364}
   - {fileID: 1364969007}
-  playerPrefab:
-  - {fileID: 9017304710697330483, guid: ce6ec1344f526cd41b8b8862f012ba3f, type: 3}
-  - {fileID: 8879952443624859770, guid: 7f2b303ab0372ac44805e7038283a063, type: 3}
-  - {fileID: 2560838438094448796, guid: 3b5f518b8d04ff84091e7afe06ba82d3, type: 3}
+  playerPrefab: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +367,7 @@ Transform:
   m_GameObject: {fileID: 724209201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -67,18 +67,14 @@ public class PlayerSetupMenuController : MonoBehaviour
         readyButton.gameObject.SetActive(false);
     }
 
-    int whichPrefab;
     public void birinci(GameObject prefab)
     {
-        whichPrefab= 0;
         PlayerConfigManager.Instance.SetPrefabColor(PlayerIndex, prefab);
     }
 
     public void ikinci(GameObject prefab)
     {
-        whichPrefab = 1;
         PlayerConfigManager.Instance.SetPrefabColor(PlayerIndex, prefab);
-
     }
 
 
