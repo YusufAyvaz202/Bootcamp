@@ -16,7 +16,6 @@ public class PlayerInputHandler : MonoBehaviour
     private MeshRenderer playerMesh;
 
     private PlayerControls controls;
-    private bool jumped = false;
 
     private void Awake()
     {
@@ -43,6 +42,10 @@ public class PlayerInputHandler : MonoBehaviour
         {
             OnJump(obj);
         }
+        if (obj.action.name == controls.Player.Dash.name)
+        {
+            OnDash(obj);
+        }
     }
 
     public void OnMove(CallbackContext context)
@@ -52,6 +55,10 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnJump(CallbackContext context)
     {
         mover.IsJump(context.action.triggered);
+    }
+    public void OnDash(CallbackContext context)
+    {
+        mover.IsDashing(context.action.triggered);
     }
 
 }
