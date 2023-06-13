@@ -30,7 +30,7 @@ U-80
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVMB7LJjE=/)
+[Miro Backlog Board](https://miro.com/app/board/uXjVMB7LJjE=/?share_link_id=660773350648)
 
 ---
 
