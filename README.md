@@ -42,6 +42,7 @@ U-80
 - 
   **Sprint board update**: Sprint board screenshotları: 
 ![Ekran görüntüsü 2023-06-08 184118](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/d7b40cca-f8bb-4897-891f-ec2238da441d)
+![Ekran görüntüsü 2023-06-14 151557](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/7d4fe3aa-7a57-418d-ab10-e6626f21ea2c)
 
 
 
