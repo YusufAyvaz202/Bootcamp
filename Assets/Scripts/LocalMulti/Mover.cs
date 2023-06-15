@@ -77,4 +77,22 @@ public class Mover : MonoBehaviour
             dashCooldown = 3;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Velocity")) //Velocity tagý bir objeye verilince power up çalýþýyor.
+        {
+            StartCoroutine(TakeVelocity());
+        }
+
+    }
+
+    IEnumerator TakeVelocity()
+    {
+        MoveSpeed = 6f;
+        Debug.Log("Alýndý 2.");
+        yield return new WaitForSeconds(3);
+        MoveSpeed = 3f;
+
+    }
 }
