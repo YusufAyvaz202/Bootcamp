@@ -1,3 +1,7 @@
+
+
+
+
 # **Takım İsmi**
 U-80
 
@@ -47,7 +51,8 @@ U-80
 
 - **Ürün Durumu**: Ekran görüntüleri:
 
-![Video](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/e590ce52-bd64-4afa-8ad0-1d6259f01799)
+https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/96c041ee-6e94-4ba8-aa62-e3a38ba957d0
+
 ![Ekran görüntüsü 2023-06-18 153010](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/f931b2e7-9090-46c6-8d56-74182ff77f2c)
 ![Ekran görüntüsü 2023-06-18 153050](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/a8fc0b2a-c5c8-4f5e-9435-d942586fc1be)
 ![Ekran görüntüsü 2023-06-18 153533](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/3276803a-23b7-4c8b-ac42-b6976c9c8170)
