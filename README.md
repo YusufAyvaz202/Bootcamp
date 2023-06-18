@@ -38,7 +38,7 @@ U-80
 - Ekipte üyelerin çoğu bu sprintte yoğun oldukları için ilk sprint hafif tutulmuştur.
 - Sprint içinde tamamlanması tahmin edilen puan: 70 Puan
 - Puan tamamlama mantığı: Projenin temel mekaniği bittikten sonra diğer özellikler ona göre ekleneceği için, projenin şu anlık sprint 1 görevleri hazırlanmıştır.
-- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: LİNK EKLENECEKTİR.
+- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır:  [Sprint 1 Daily Scrum Chats](https://1drv.ms/w/s!AlVhK8ZJOGEwgmbdjQDSbepUPJk6?e=Hg5BH2)
 - 
   **Sprint board update**: Sprint board screenshotları: 
 ![Ekran görüntüsü 2023-06-08 184118](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/d7b40cca-f8bb-4897-891f-ec2238da441d)
