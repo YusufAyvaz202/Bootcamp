@@ -63,6 +63,11 @@ https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/96c041ee-6e94-4ba8-aa6
   - Bu görevleri ikinici sprinte taşıma kararı alınmıştır.
   - Oyunda Bugları azaltmak için sürekli denenmesi kararı alınmıştır.
 
+- **Sprint Review**: 
+  Temel oyun mekanikleri kodlanmış olup oyunun diğer özelliklerinin nasıl olacağı değerlendirilmiştir.
+  Oyunun şu anlık 2 kişilik tasarlanmasına karar verilmiştir. Duruma göre değişebilir.
+   
+
 -**Diğer Notlar**:
 - N/A
 
