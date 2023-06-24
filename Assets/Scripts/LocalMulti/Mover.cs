@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Mover : MonoBehaviour
 {
@@ -18,9 +19,15 @@ public class Mover : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private Vector2 inputVector = Vector2.zero;
 
+
+    public Boomerang boomerangPrefab;
+    private Boomerang currentBoomerang;
+    public Transform meeple;
+
     private bool jumped;
     private bool dashed;
     private bool groundedPlayer;
+    private bool attacked;
 
     private void Awake()
     {
@@ -50,6 +57,16 @@ public class Mover : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+        if (attacked && currentBoomerang == null)
+        {
+            ThrowBoomerang();
+        }
+        if (currentBoomerang!=null)
+        {
+            currentBoomerang.initialPosition = this.transform.position;
+        }
+
     }
 
     public void SetInputVector(Vector2 direction)
@@ -65,6 +82,10 @@ public class Mover : MonoBehaviour
     public void IsDashing(bool dash)
     {
         dashed = dash;
+    }
+    public void IsAttacked(bool attack)
+    {
+        attacked = attack;
     }
 
     IEnumerator Dash()
@@ -94,5 +115,15 @@ public class Mover : MonoBehaviour
         yield return new WaitForSeconds(3);
         MoveSpeed = 3f;
 
+    }
+
+    private void ThrowBoomerang()
+    {
+        meeple = this.gameObject.transform.GetChild(0);
+
+        
+        // Boomerang'ýn fýrlatýldýðý pozisyona ve rotasyona sahip bir klonunu oluþtur
+        currentBoomerang = Instantiate(boomerangPrefab, meeple.position, transform.rotation);
+        currentBoomerang.Throw();
     }
 }

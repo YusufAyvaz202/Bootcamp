@@ -114,6 +114,8 @@ MonoBehaviour:
   dashSpeed: 3
   dashTime: 0.25
   dashCooldown: 3
+  boomerangPrefab: {fileID: 6122323600174744058, guid: f13b5e195c83d2f49a4f0384eaf66a17, type: 3}
+  meeple: {fileID: 0}
 --- !u!114 &8215245903740804760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +132,8 @@ MonoBehaviour:
   dashSpeed: 0
   dashTime: 0
   dashCooldown: 0
+  boomerangPrefab: {fileID: 0}
+  meeple: {fileID: 0}
 --- !u!143 &2070285224352037927
 CharacterController:
   m_ObjectHideFlags: 0

@@ -46,6 +46,10 @@ public class PlayerInputHandler : MonoBehaviour
         {
             OnDash(obj);
         }
+        if (obj.action.name == controls.Player.Attack.name)
+        {
+            OnAttacked(obj);
+        }
     }
 
     public void OnMove(CallbackContext context)
@@ -59,6 +63,10 @@ public class PlayerInputHandler : MonoBehaviour
     public void OnDash(CallbackContext context)
     {
         mover.IsDashing(context.action.triggered);
+    }
+    public void OnAttacked(CallbackContext context)
+    {
+        mover.IsAttacked(context.action.triggered);
     }
 
 }
