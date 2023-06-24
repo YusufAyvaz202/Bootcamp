@@ -73,9 +73,13 @@ https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/96c041ee-6e94-4ba8-aa6
 
 
 # Sprint 2
+- Sprint içinde tamamlanması tahmin edilen puan: 50 Puan
+- Puan tamamlama mantığı: Projenin temel mekaniği bittikten sonra diğer özellikler ona göre ekleneceği için, projenin şu anlık sprint 1 görevleri hazırlanmıştır.
+- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: LİNK EKLENECEKTİR.
+- 
+**Sprint board update**: Sprint board screenshotları: 
+![Ekran görüntüsü 2023-06-24 173956](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/380a9a0d-a484-41ca-9c96-18e191d78fc2)
 
-
----
 
 # Sprint 3
 
