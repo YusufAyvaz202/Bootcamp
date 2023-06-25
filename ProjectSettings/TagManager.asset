@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Velocity
-  - Ice
   layers:
   - Default
   - TransparentFX
