@@ -10,6 +10,7 @@ public class PlayerInputHandler : MonoBehaviour
 {
     private PlayerConfig playerConfig;
     private Mover mover;
+    private Attack attack;
 
 
     [SerializeField]
@@ -20,6 +21,7 @@ public class PlayerInputHandler : MonoBehaviour
     private void Awake()
     {
         mover = GetComponent<Mover>();
+        attack = GetComponent<Attack>();
         controls = new PlayerControls();
     }
 
@@ -66,7 +68,7 @@ public class PlayerInputHandler : MonoBehaviour
     }
     public void OnAttacked(CallbackContext context)
     {
-        mover.IsAttacked(context.action.triggered);
+        attack.IsAttacked(context.action.triggered);
     }
 
 }

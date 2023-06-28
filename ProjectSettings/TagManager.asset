@@ -8,6 +8,7 @@ TagManager:
   - Ice
   - Player 1
   - Player 2
+  - BooBack
   layers:
   - Default
   - TransparentFX

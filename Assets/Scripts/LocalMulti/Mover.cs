@@ -20,14 +20,11 @@ public class Mover : MonoBehaviour
     private Vector2 inputVector = Vector2.zero;
 
 
-    public Boomerang boomerangPrefab;
-    private Boomerang currentBoomerang;
-    public Transform meeple;
+    
 
     private bool jumped;
     private bool dashed;
     private bool groundedPlayer;
-    private bool attacked;
 
     private void Awake()
     {
@@ -58,14 +55,7 @@ public class Mover : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        if (attacked && currentBoomerang == null)
-        {
-            ThrowBoomerang();
-        }
-        if (currentBoomerang!=null)
-        {
-            currentBoomerang.initialPosition = this.transform.position;
-        }
+       
 
     }
 
@@ -83,10 +73,7 @@ public class Mover : MonoBehaviour
     {
         dashed = dash;
     }
-    public void IsAttacked(bool attack)
-    {
-        attacked = attack;
-    }
+   
 
     IEnumerator Dash()
     {
@@ -117,13 +104,5 @@ public class Mover : MonoBehaviour
 
     }
 
-    private void ThrowBoomerang()
-    {
-        meeple = this.gameObject.transform.GetChild(0);
-
-        
-        // Boomerang'ýn fýrlatýldýðý pozisyona ve rotasyona sahip bir klonunu oluþtur
-        currentBoomerang = Instantiate(boomerangPrefab, meeple.position, transform.rotation);
-        currentBoomerang.Throw();
-    }
+    
 }
