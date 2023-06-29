@@ -4,7 +4,7 @@ public class Boomerang : MonoBehaviour
 {
     public float speed = 5f;
     public float returnDistance = 10f;
-    private bool isReturning = false;
+    public bool isReturning = false;
     public Vector3 initialPosition;
     public float rotationSpeed = 360f;
 
@@ -26,10 +26,10 @@ public class Boomerang : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, initialPosition, speed * Time.deltaTime);
             transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
 
-            //if (transform.position == initialPosition)
-            //{
-            //    Destroy(gameObject);
-            //}
+            if (transform.position == initialPosition)
+            {
+                Destroy(gameObject);
+            }
 
 
         }
@@ -41,14 +41,14 @@ public class Boomerang : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("BooBack") && isReturning)
-        {
-            Destroy(gameObject);//Baþka oyuncunun colliderýna girincede siliniyor. bir ara bak.
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("BooBack") && isReturning && transform.position==initialPosition)
+    //    {
+    //        Destroy(gameObject);//Baþka oyuncunun colliderýna girincede siliniyor. bir ara bak.
 
-        }
-    }
+    //    }
+    //}
 
     public void Throw()
     {

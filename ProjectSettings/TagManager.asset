@@ -9,6 +9,9 @@ TagManager:
   - Player 1
   - Player 2
   - BooBack
+  - FrozenBoomerang
+  - FrozenPOWER
+  - Boomerang
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Boomerang
   - 
   - 
   - 

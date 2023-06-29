@@ -7,13 +7,15 @@ public class Attack : MonoBehaviour
 {
 
     public Boomerang boomerangPrefab;
+    public Boomerang frozonBoomerangPrefab;
+    public Boomerang NormalBoomerangPrefab;
     private Boomerang currentBoomerang;
     public Transform meeple;
     private bool attacked;
 
     void Start()
     {
-        
+        boomerangPrefab = NormalBoomerangPrefab;
     }
     public void IsAttacked(bool attack)
     {
@@ -24,6 +26,7 @@ public class Attack : MonoBehaviour
         if (attacked && currentBoomerang == null)
         {
             ThrowBoomerang();
+            boomerangPrefab = NormalBoomerangPrefab;
         }
         if (currentBoomerang != null)
         {
@@ -34,10 +37,18 @@ public class Attack : MonoBehaviour
     private void ThrowBoomerang()
     {
         meeple = this.gameObject.transform.GetChild(0);
-
+        
         //meeple = this.transform;
 
         currentBoomerang = Instantiate(boomerangPrefab, meeple.position, transform.rotation);
         currentBoomerang.Throw();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("FrozenPOWER"))
+        {
+            boomerangPrefab = frozonBoomerangPrefab;
+        }
     }
 }
