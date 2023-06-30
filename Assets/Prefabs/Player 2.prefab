@@ -226,5 +226,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boomerang: {fileID: 7957076735648027306, guid: af4f093153a653f48a4bd19bb4549e04, type: 3}
+  text: {fileID: 8846474006434291915, guid: 80ff230ed4c4bed40888ff26bab3e92c, type: 3}
   health: 100
   isFrozen: 0

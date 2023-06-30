@@ -41,15 +41,7 @@ public class Boomerang : MonoBehaviour
 
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("BooBack") && isReturning && transform.position==initialPosition)
-    //    {
-    //        Destroy(gameObject);//Baþka oyuncunun colliderýna girincede siliniyor. bir ara bak.
-
-    //    }
-    //}
-
+    
     public void Throw()
     {
         Rigidbody rigidbody = GetComponent<Rigidbody>();

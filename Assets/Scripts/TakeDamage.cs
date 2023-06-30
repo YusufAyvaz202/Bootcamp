@@ -12,7 +12,6 @@ public class TakeDamage : MonoBehaviour
 
     public int health = 100;
     public bool isFrozen = false;
-    private bool isPlayerFrozen = false;
 
     private void Start()
     {
@@ -25,7 +24,6 @@ public class TakeDamage : MonoBehaviour
         if (other.CompareTag("Boomerang") && boomerang.isReturning == false)
         {
             health -= 5;
-            Debug.Log("oldu1");
         }
         if (other.CompareTag("FrozenBoomerang") && boomerang.isReturning == false)
         {
@@ -33,7 +31,6 @@ public class TakeDamage : MonoBehaviour
             isFrozen = true;
             mover.enabled = false;
             attack.enabled = false;
-            Debug.Log("oldu2");
             StartCoroutine(ExitFreeze());
         }
     }
@@ -47,28 +44,6 @@ public class TakeDamage : MonoBehaviour
         attack.enabled = true;
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.collider.CompareTag("FrozenBoomerang") && isFrozen)
-    //    {
-    //        isPlayerFrozen = true;
-    //        StartCoroutine(ExitPlayerFreeze());
-    //    }
-    //}
-
-    //private IEnumerator ExitPlayerFreeze()
-    //{
-    //    yield return new WaitForSeconds(2f); // Oyuncunun donma süresi burada 2 saniye olarak varsayýlmýþtýr, ihtiyaca göre deðiþtirilebilir
-
-    //    isPlayerFrozen = false;
-    //}
-
-    //private void Update()
-    //{
-    //    if (!isPlayerFrozen)
-    //    {
-    //        // Oyuncunun hareket kodlarý buraya gelecek
-    //    }
-    //}
+   
 
 }
