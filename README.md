@@ -75,13 +75,21 @@ https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/96c041ee-6e94-4ba8-aa6
 # Sprint 2
 - Sprint içinde tamamlanması tahmin edilen puan: 50 Puan
 - Puan tamamlama mantığı: Projenin temel mekaniği bittikten sonra diğer özellikler ona göre ekleneceği için, projenin şu anlık sprint 1 görevleri hazırlanmıştır.
-- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 1 Daily Scrum Chats](https://1drv.ms/w/s!AlVhK8ZJOGEwgngtbaQcgiGnhtrV?e=WPwCMo)
+- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint 2 Daily Scrum Chats](https://1drv.ms/w/s!AlVhK8ZJOGEwgngtbaQcgiGnhtrV?e=WPwCMo)
 - 
 **Sprint board update**: Sprint board screenshotları: 
 ![Ekran görüntüsü 2023-06-24 173956](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/380a9a0d-a484-41ca-9c96-18e191d78fc2)
 ![Ekran görüntüsü 2023-07-02 143211](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/042de452-8e7e-4d1d-afb1-73f102876655)
 
 - **Ürün Durumu**: Ekran görüntüleri:
+  
+https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/d4544e33-1add-495d-bf44-f307c8b5d921
+
+![Ekran görüntüsü 2023-07-02 200629](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/ab46c44b-a343-4065-9e34-70f75ddb11b9)
+![Ekran görüntüsü 2023-07-02 200642](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/9aa92acc-3757-4d29-a372-e7fc00b33c24)
+![Ekran görüntüsü 2023-07-02 200901](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/6a795165-e623-44ef-8296-d818842a2cbb)
+![Ekran görüntüsü 2023-07-02 200924](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/3d3fa7d4-bc64-4e6a-8ad2-a4575872b4bd)
+
 
 - **Sprint Retrospective:**
   - Tamamlanamayn görevler 3.sprinte aktarılmıştır
@@ -89,8 +97,8 @@ https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/96c041ee-6e94-4ba8-aa6
     
 
 - **Sprint Review**: 
- -
- -
+ - Oyunun Mekaniklerinin büyük bir kısmı bitmiştir. 
+ - 3.Sprintte odaklanacağımız kısım animasyonlar ve modeller ve level tasarımı olacaktır.
 
 -**Diğer Notlar**:
 - N/A
