@@ -12,6 +12,8 @@ TagManager:
   - FrozenBoomerang
   - FrozenPOWER
   - Boomerang
+  - PoisonPOWER
+  - PoisonBoomerang
   layers:
   - Default
   - TransparentFX

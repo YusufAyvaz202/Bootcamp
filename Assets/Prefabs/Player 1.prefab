@@ -181,6 +181,7 @@ MonoBehaviour:
   boomerangPrefab: {fileID: 0}
   frozonBoomerangPrefab: {fileID: 7957076735648027306, guid: af4f093153a653f48a4bd19bb4549e04, type: 3}
   NormalBoomerangPrefab: {fileID: 6122323600174744058, guid: f13b5e195c83d2f49a4f0384eaf66a17, type: 3}
+  poisonBoomerangPrefab: {fileID: 3899583843372388046, guid: 13e8afdc288dc8e4da4d90f07b16ae8b, type: 3}
   meeple: {fileID: 0}
 --- !u!114 &-4234796797078658729
 MonoBehaviour:
@@ -195,7 +196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boomerang: {fileID: 7957076735648027306, guid: af4f093153a653f48a4bd19bb4549e04, type: 3}
-  text: {fileID: 9109382503998899316, guid: 857415b2d6df4f147a2761400593ae22, type: 3}
   health: 100
   isFrozen: 0
 --- !u!1 &9208615219577066697

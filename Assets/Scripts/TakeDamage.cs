@@ -33,6 +33,11 @@ public class TakeDamage : MonoBehaviour
             attack.enabled = false;
             StartCoroutine(ExitFreeze());
         }
+
+        if (other.CompareTag("PoisonBoomerang")&& boomerang.isReturning==false)
+        {
+            StartCoroutine(PoisonEffect());
+        }
     }
 
     private IEnumerator ExitFreeze()
@@ -44,6 +49,17 @@ public class TakeDamage : MonoBehaviour
         attack.enabled = true;
     }
 
-   
+   IEnumerator PoisonEffect()
+    {
+        health -= 2;
+        yield return new WaitForSeconds(0.2f);
+        health -= 2;
+        yield return new WaitForSeconds(0.2f);
+        health -= 2;
+        yield return new WaitForSeconds(0.2f);
+        health -= 2;
+        yield return new WaitForSeconds(0.2f);
+        health -= 2;
+    }
 
 }

@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour
     public Boomerang boomerangPrefab;
     public Boomerang frozonBoomerangPrefab;
     public Boomerang NormalBoomerangPrefab;
+    public Boomerang poisonBoomerangPrefab;
     private Boomerang currentBoomerang;
     public Transform meeple;
     private bool attacked;
@@ -49,6 +50,10 @@ public class Attack : MonoBehaviour
         if (other.CompareTag("FrozenPOWER"))
         {
             boomerangPrefab = frozonBoomerangPrefab;
+        }
+        if (other.CompareTag("PoisonPOWER"))
+        {
+            boomerangPrefab = poisonBoomerangPrefab;
         }
     }
 }
