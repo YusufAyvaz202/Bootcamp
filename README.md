@@ -104,5 +104,11 @@ https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/d4544e33-1add-495d-bf4
 - N/A
 
 # Sprint 3
+- Sprint içinde tamamlanması tahmin edilen puan: 50 Puan
+- Puan tamamlama mantığı: Toplamda 120 puanlık backlog oluşturulmuştur. 
+- Daily Scrum: Daily Scrum toplantılarının zamansal sebeplerden ötürü Whatsapp üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: LİNK EKLENECEKTİR.
+
+  **Sprint board update**: Sprint board screenshotları:
+  ![Ekran görüntüsü 2023-07-04 192030](https://github.com/YusufAyvaz202/Bootcamp/assets/65962835/a12e3684-0e2f-4b58-bb1b-2c3e401595a1)
 
 ---
