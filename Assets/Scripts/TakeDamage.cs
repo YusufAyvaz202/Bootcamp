@@ -10,6 +10,8 @@ public class TakeDamage : MonoBehaviour
     private Attack attack;
     public Boomerang boomerang;
 
+    Coroutine Poison = null;
+
     public int health = 100;
     public bool isFrozen = false;
 
@@ -17,6 +19,7 @@ public class TakeDamage : MonoBehaviour
     {
         mover = GetComponent<Mover>();
         attack = GetComponent<Attack>();
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -34,9 +37,24 @@ public class TakeDamage : MonoBehaviour
             StartCoroutine(ExitFreeze());
         }
 
-        if (other.CompareTag("PoisonBoomerang")&& boomerang.isReturning==false)
+        
+
+        if (Poison == null&& other.CompareTag("PoisonBoomerang") && boomerang.isReturning == false)
         {
-            StartCoroutine(PoisonEffect());
+            Poison = StartCoroutine(PoisonEffect());
+
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+       
+
+        if (Poison != null&& other.CompareTag("Ayran"))
+        {
+            StopCoroutine(Poison);
+            Poison = null;
         }
     }
 
@@ -52,14 +70,15 @@ public class TakeDamage : MonoBehaviour
    IEnumerator PoisonEffect()
     {
         health -= 2;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1.2f);
         health -= 2;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1.2f);
         health -= 2;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1.2f);
         health -= 2;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(1.2f);
         health -= 2;
+        Poison = null;
     }
 
 }
