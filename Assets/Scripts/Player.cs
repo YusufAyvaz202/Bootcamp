@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public float gravity = 9.81f;
     public float pushForce = 10.0f;
     public float pushDuration = 1.0f;
+    public bool obstacle1=false;
+    public bool obstacle2=false;
 
     private Vector3 move = Vector3.zero;
     private float pushTimer = 0.0f;
@@ -42,8 +44,23 @@ public class Player : MonoBehaviour
         }
 
         characterController.Move(move * speed * Time.deltaTime);
+
+        if(obstacle1==true && obstacle2==true )
+        {
+            Destroy(gameObject);
+        }
     }
 
-   
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "obstacle1")
+        {
+            obstacle1 = true;
+        }
+        if (other.tag == "obstacle2")
+        {
+            obstacle2 = true;
+        }
+    }
+
 }

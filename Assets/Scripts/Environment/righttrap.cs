@@ -1,53 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class righttrap : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float speed;
-    public float forceSpeed;
+    public Transform firstTransform;
+    public Transform secondTransform;
     public float time;
-    public float interval;
-    public bool timer;
     // Start is called before the first frame update
     void Start()
     {
-        forceSpeed = speed;
+        transform.DOMove(secondTransform.position, time)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetEase(Ease.Linear);
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = Vector3.left * forceSpeed;
-
-        if (timer)
-        {
-            time += Time.deltaTime;
-            if (time > interval)
-            {
-
-                if (forceSpeed > 0)
-                {
-                    forceSpeed = -speed;
-                    timer = false;
-                    time = 0;
-                }
-                else if (forceSpeed < 0)
-                {
-                    forceSpeed = speed;
-                    timer = false;
-                    time = 0;
-                }
-            }
-        }
+       
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Untagged")
-        {
-            timer = true;
-        }
-    }
+    
 }
