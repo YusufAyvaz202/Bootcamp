@@ -70,13 +70,15 @@ public class TakeDamage : MonoBehaviour
    IEnumerator PoisonEffect()
     {
         health -= 2;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.0f);
         health -= 2;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.0f);
         health -= 2;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.0f);
         health -= 2;
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1.0f);
+        health -= 2;
+        yield return new WaitForSeconds(1.0f);
         health -= 2;
         Poison = null;
     }
