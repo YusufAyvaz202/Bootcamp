@@ -17,6 +17,7 @@ TagManager:
   - Ayran
   - obstacle1
   - obstacle2
+  - character
   layers:
   - Default
   - TransparentFX
