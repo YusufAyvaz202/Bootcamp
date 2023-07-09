@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class TakeDamage : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class TakeDamage : MonoBehaviour
     private Mover mover;
     private Attack attack;
     public Boomerang boomerang;
+    public VisualEffect poisonEffect;
 
     Coroutine Poison = null;
 
@@ -17,6 +19,7 @@ public class TakeDamage : MonoBehaviour
 
     private void Start()
     {
+        poisonEffect.Stop();
         mover = GetComponent<Mover>();
         attack = GetComponent<Attack>();
 
@@ -69,6 +72,7 @@ public class TakeDamage : MonoBehaviour
 
    IEnumerator PoisonEffect()
     {
+        poisonEffect.Play(); 
         health -= 2;
         yield return new WaitForSeconds(1.2f);
         health -= 2;
@@ -79,6 +83,8 @@ public class TakeDamage : MonoBehaviour
         yield return new WaitForSeconds(1.2f);
         health -= 2;
         Poison = null;
+        poisonEffect.Stop();
+
     }
 
 }
