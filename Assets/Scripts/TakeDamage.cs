@@ -11,6 +11,11 @@ public class TakeDamage : MonoBehaviour
     private Attack attack;
     public Boomerang boomerang;
     public VisualEffect poisonEffect;
+    public Material iceMaterial;
+    private Material normalMaterial;
+    private AudioSource _audio;
+    public AudioClip freezeClip;
+
 
     Coroutine Poison = null;
 
@@ -22,7 +27,8 @@ public class TakeDamage : MonoBehaviour
         poisonEffect.Stop();
         mover = GetComponent<Mover>();
         attack = GetComponent<Attack>();
-
+        normalMaterial = gameObject.GetComponent<MeshRenderer>().material;
+        _audio = gameObject.GetComponent<AudioSource>();
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,10 +39,12 @@ public class TakeDamage : MonoBehaviour
         }
         if (other.CompareTag("FrozenBoomerang") && boomerang.isReturning == false)
         {
+            _audio.PlayOneShot(freezeClip);
             health -= 10;
             isFrozen = true;
             mover.enabled = false;
             attack.enabled = false;
+            gameObject.GetComponent<MeshRenderer>().material = iceMaterial;
             StartCoroutine(ExitFreeze());
         }
 
@@ -45,7 +53,6 @@ public class TakeDamage : MonoBehaviour
         if (Poison == null&& other.CompareTag("PoisonBoomerang") && boomerang.isReturning == false)
         {
             Poison = StartCoroutine(PoisonEffect());
-
         }
 
     }
@@ -57,6 +64,7 @@ public class TakeDamage : MonoBehaviour
         if (Poison != null&& other.CompareTag("Ayran"))
         {
             StopCoroutine(Poison);
+            poisonEffect.Stop();
             Poison = null;
         }
     }
@@ -68,9 +76,10 @@ public class TakeDamage : MonoBehaviour
         isFrozen = false;
         mover.enabled = true;
         attack.enabled = true;
+        gameObject.GetComponent<MeshRenderer>().material = normalMaterial;
     }
 
-   IEnumerator PoisonEffect()
+    IEnumerator PoisonEffect()
     {
         poisonEffect.Play(); 
         health -= 2;
